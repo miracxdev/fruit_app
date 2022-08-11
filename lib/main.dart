@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:fruit_app/u%C4%B1/home_screen/view/home_screen.dart';
-import 'package:fruit_app/u%C4%B1/info_screen/info_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,6 +16,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: HomeScreen());
+        home:  HomeScreen());
   }
 }

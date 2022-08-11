@@ -13,11 +13,11 @@ class _InfoScreenState extends State<InfoScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xfff8f0dd),
+      backgroundColor: const Color(0xfff8f0dd),
       body: SingleChildScrollView(
           child: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: paddingXXXXXXXXXL,
           ),
           Image.asset(
@@ -29,9 +29,9 @@ class _InfoScreenState extends State<InfoScreen> {
             height: paddingXXXXXXL,
           ),
           Container(
-            padding: EdgeInsets.only(left: 30, right: 30),
+            padding: const EdgeInsets.only(left: 30, right: 30),
             width: double.infinity,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(40.0),
@@ -39,11 +39,11 @@ class _InfoScreenState extends State<InfoScreen> {
                 )),
             child: Column(
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 50,
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(right: paddingXXXXXXXXXXL),
+                const Padding(
+                  padding: EdgeInsets.only(right: paddingXXXXXXXXXXL),
                   child: Text(
                     "Tomat, Sledri paket",
                     style: TextStyle(
@@ -52,12 +52,12 @@ class _InfoScreenState extends State<InfoScreen> {
                         fontSize: 25),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 2,
                 ),
-                Padding(
+                const Padding(
                   padding:
-                      const EdgeInsets.only(right: paddingXXXXXXXXXXXXXXXXXXXL),
+                      EdgeInsets.only(right: paddingXXXXXXXXXXXXXXXXXXXL),
                   child: Text(
                     "super lengkap",
                     style: TextStyle(
@@ -66,11 +66,11 @@ class _InfoScreenState extends State<InfoScreen> {
                         fontSize: 25),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: paddingXL,
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(
+                const Padding(
+                  padding: EdgeInsets.only(
                       right: paddingXXXXXXXXXXXXXXXXXXXXXXXXXXL),
                   child: Text(
                     "Deskripsi",
@@ -78,34 +78,34 @@ class _InfoScreenState extends State<InfoScreen> {
                         fontSize: paddingM, fontWeight: FontWeight.w400),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: paddingS,
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(right: 5),
+                const Padding(
+                  padding: EdgeInsets.only(right: 5),
                   child: Text(
                     "Lorem ipsum dolor sit amet consectetur adiplscing  elit. Semper varius molestie lorem eget enim tortor aliquam et feugiat. laculis sem euismod in integer.",
                     style: TextStyle(
                         fontSize: paddingM, fontWeight: FontWeight.w400),
                   ),
                 ),
-                SizedBox(height: paddingXXXXXXXXXXXXXXXL),
+                const SizedBox(height: paddingXXXXXXXXXXXXXXXL),
                 TextButton(
                   onPressed: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: ((context) => HomeScreen())));
+                            builder: ((context) => const HomeScreen())));
                   },
-                  child: Text(
+                  child: const Text(
                     "Add to cart",
                     style: TextStyle(color: Colors.white),
                   ),
                   style: TextButton.styleFrom(
-                    backgroundColor: Color(0xff2ec06d),
+                    backgroundColor: const Color(0xff2ec06d),
                     shape: const RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(17))),
-                    padding: EdgeInsets.only(
+                    padding: const EdgeInsets.only(
                         left: paddingXXXXXXXXXL,
                         right: paddingXXXXXXXXXL,
                         top: paddingXM,
