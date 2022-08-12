@@ -92,10 +92,10 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Column(
                 children: [
                   const Padding(
-                    padding: EdgeInsets.only(right: 200, top: 35),
+                    padding: EdgeInsets.only(right: 185, top: 35),
                     child: Text(
                       "Browse by Category",
-                      style: TextStyle(color: Colors.black, fontSize: 14),
+                      style: TextStyle(color: Colors.black, fontSize: 17),
                     ),
                   ),
                   const SizedBox(
@@ -103,7 +103,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),
