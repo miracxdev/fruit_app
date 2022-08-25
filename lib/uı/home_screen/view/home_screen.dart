@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:fruit_app/app/app_constants/padding_size.dart';
-import 'package:fruit_app/u%C4%B1/home_screen/controller/home_screen_controller.dart';
 import 'package:fruit_app/u%C4%B1/info_screen/info_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -11,11 +11,14 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  HomeScreenController homeScreenController = HomeScreenController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+          title: Text(
+            "Welcome Back, Mirac",
+            style: TextStyle(color: Colors.white, fontSize: 17),
+          ),
           backgroundColor: const Color(0xff2ec06d),
           elevation: 0.0,
           actions: const [
@@ -33,30 +36,20 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           children: [
             const SizedBox(
-              height: paddingM,
+              height: paddingXM,
             ),
             const Padding(
               padding: EdgeInsets.only(right: 200),
               child: Text(
-                "Welcome Back, Jhon",
-                style: TextStyle(color: Colors.white, fontSize: 14),
-              ),
-            ),
-            const SizedBox(
-              height: paddingXM,
-            ),
-            const Padding(
-              padding: EdgeInsets.only(right: 125),
-              child: Text(
-                "Jelajahi Kebutuhan",
+                "Meyve-Sebze",
                 style: TextStyle(color: Colors.white, fontSize: paddingL),
               ),
             ),
             const SizedBox(height: paddingS),
             const Padding(
-              padding: EdgeInsets.only(right: 200),
+              padding: EdgeInsets.only(right: 120),
               child: Text(
-                "Nutrisi anda",
+                "Siparişi verebilirsiniz",
                 style: TextStyle(color: Colors.white, fontSize: paddingL),
               ),
             ),
@@ -67,10 +60,9 @@ class _HomeScreenState extends State<HomeScreen> {
               width: 350,
               child: TextField(
                 decoration: InputDecoration(
-                    prefixIcon: const Icon(Icons.search),
+                    suffixIcon: const Icon(Icons.search),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15.0),
-                      //borderSide: BorderSide(color: Colors.red[200]!),
                     ),
                     filled: true,
                     hintStyle: const TextStyle(color: Colors.white),
@@ -97,6 +89,67 @@ class _HomeScreenState extends State<HomeScreen> {
                       "Browse by Category",
                       style: TextStyle(color: Colors.black, fontSize: 17),
                     ),
+                  ),
+                  Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(top: 20),
+                        child: CircleAvatar(
+                          backgroundImage: NetworkImage(
+                              "https://w7.pngwing.com/pngs/588/395/png-transparent-green-chili-chili-pepper-chili-con-carne-vegetarian-cuisine-vegetable-capsicum-fresh-chili-natural-foods-food-cayenne-pepper.png"),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 22,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 20),
+                        child: CircleAvatar(
+                          backgroundImage: NetworkImage(
+                              "https://w7.pngwing.com/pngs/1022/960/png-transparent-cherry-tomato-tomato-paste-beefsteak-tomato-others-miscellaneous-natural-foods-food.png"),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 22,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 20),
+                        child: CircleAvatar(
+                          backgroundImage: NetworkImage(
+                              "https://w7.pngwing.com/pngs/466/937/png-transparent-yellow-onion-vegetable-mandi-vegetable-brown-food-onion.png"),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 22,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 20),
+                        child: CircleAvatar(
+                          backgroundImage: NetworkImage(
+                              "https://w7.pngwing.com/pngs/84/818/png-transparent-eggplant-vegetable-gratis-auglis-eggplant-food-nutrition-fruit.png"),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 22,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 20),
+                        child: CircleAvatar(
+                          backgroundImage: NetworkImage(
+                              "https://w7.pngwing.com/pngs/437/157/png-transparent-coriander-stuffing-flat-leaved-parsley-herb-persil-leaf-vegetable-food-onion.png"),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 22,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 20),
+                        child: CircleAvatar(
+                          backgroundImage: NetworkImage(
+                              "https://w7.pngwing.com/pngs/74/390/png-transparent-mashed-potato-french-fries-potato-wedges-baked-potato-potato-chip-vegetable-food-baking-tomato.png"),
+                        ),
+                      ),
+                    ],
                   ),
                   const SizedBox(
                     height: 800,

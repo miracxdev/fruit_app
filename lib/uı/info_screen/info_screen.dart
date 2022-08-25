@@ -43,9 +43,9 @@ class _InfoScreenState extends State<InfoScreen> {
                   height: 50,
                 ),
                 const Padding(
-                  padding: EdgeInsets.only(right: paddingXXXXXXXXXXL),
+                  padding: EdgeInsets.only(right: 78),
                   child: Text(
-                    "Tomat, Sledri paket",
+                    "Domates, Sledri paketi",
                     style: TextStyle(
                         fontWeight: FontWeight.w500,
                         color: Colors.black,
@@ -59,7 +59,7 @@ class _InfoScreenState extends State<InfoScreen> {
                   padding:
                       EdgeInsets.only(right: paddingXXXXXXXXXXXXXXXXXXXL),
                   child: Text(
-                    "super lengkap",
+                    "süper eksiksiz",
                     style: TextStyle(
                         fontWeight: FontWeight.w500,
                         color: Colors.black,
@@ -71,9 +71,9 @@ class _InfoScreenState extends State<InfoScreen> {
                 ),
                 const Padding(
                   padding: EdgeInsets.only(
-                      right: paddingXXXXXXXXXXXXXXXXXXXXXXXXXXL),
+                      right: 290),
                   child: Text(
-                    "Deskripsi",
+                    "Tanım",
                     style: TextStyle(
                         fontSize: paddingM, fontWeight: FontWeight.w400),
                   ),
@@ -82,9 +82,9 @@ class _InfoScreenState extends State<InfoScreen> {
                   height: paddingS,
                 ),
                 const Padding(
-                  padding: EdgeInsets.only(right: 5),
+                  padding: EdgeInsets.only(left: 10),
                   child: Text(
-                    "Lorem ipsum dolor sit amet consectetur adiplscing  elit. Semper varius molestie lorem eget enim tortor aliquam et feugiat. laculis sem euismod in integer.",
+                    "Müşterinin kendisi de elit elde etmeyi başarabilmelidir. Farklı bir çalışanın her zaman yardıma ve tavsiyeye ihtiyacı vardır. havuzlarda, performans mükemmeldir.",
                     style: TextStyle(
                         fontSize: paddingM, fontWeight: FontWeight.w400),
                   ),
